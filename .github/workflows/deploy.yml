@@ -42,17 +42,29 @@ jobs:
     - name: 프로덕션 빌드
       run: npm run build
       
+    - name: 빌드 결과 상세 확인
+      run: |
+        echo "=== 빌드 결과 확인 ==="
+        ls -la dist/
+        echo ""
+        echo "=== dist 디렉토리 내용 ==="
+        find dist -type f -name "*.html" -o -name "*.js" -o -name "*.css" | head -20
+        echo ""
+        echo "=== index.html 존재 및 내용 확인 ==="
+        if [ -f dist/index.html ]; then
+          echo "✅ index.html 존재"
+          echo "=== index.html 첫 10줄 ==="
+          head -10 dist/index.html
+        else
+          echo "❌ index.html 없음"
+          echo "=== dist 디렉토리 전체 구조 ==="
+          tree dist/ || find dist -type f
+        fi
+        
     - name: 빌드 아티팩트 업로드
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./dist
-        
-    - name: 빌드 결과 확인
-      run: |
-        echo "=== 빌드 결과 확인 ==="
-        ls -la dist/
-        echo "=== index.html 존재 확인 ==="
-        test -f dist/index.html && echo "✅ index.html 존재" || echo "❌ index.html 없음"
 
   # GitHub Pages 배포 작업
   deploy:
@@ -63,6 +75,19 @@ jobs:
     needs: build
     
     steps:
+    - name: 배포 전 환경 확인
+      run: |
+        echo "=== GitHub Pages 환경 확인 ==="
+        echo "Repository: ${{ github.repository }}"
+        echo "Branch: ${{ github.ref_name }}"
+        echo "Event: ${{ github.event_name }}"
+        
     - name: GitHub Pages 배포
       id: deployment
       uses: actions/deploy-pages@v4
+      
+    - name: 배포 결과 확인
+      run: |
+        echo "=== 배포 완료 ==="
+        echo "배포 URL: ${{ steps.deployment.outputs.page_url }}"
+        echo "예상 URL: https://yanggangyiplus.github.io/persona-chronicle-hub/"
