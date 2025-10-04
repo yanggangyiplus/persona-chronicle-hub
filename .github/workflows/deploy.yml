@@ -46,6 +46,13 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./dist
+        
+    - name: 빌드 결과 확인
+      run: |
+        echo "=== 빌드 결과 확인 ==="
+        ls -la dist/
+        echo "=== index.html 존재 확인 ==="
+        test -f dist/index.html && echo "✅ index.html 존재" || echo "❌ index.html 없음"
 
   # GitHub Pages 배포 작업
   deploy:
