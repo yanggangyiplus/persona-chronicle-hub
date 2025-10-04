@@ -1,0 +1,23 @@
+{
+  "email": "alex.johnson@example.com",
+  "phone": "+1 (555) 123-4567",
+  "location": "San Francisco, CA",
+  "kakaoTalk": "alexj",
+  "socials": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/alexjohnson",
+      "icon": "Github"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/alexjohnson",
+      "icon": "Linkedin"
+    },
+    {
+      "platform": "Website",
+      "url": "https://alexjohnson.dev",
+      "icon": "Globe"
+    }
+  ]
+}

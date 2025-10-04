@@ -1,0 +1,28 @@
+{
+  "name": "Alex Johnson",
+  "phrase": "Passionate about creating elegant solutions to complex problems",
+  "bio": "I'm a full-stack developer with a keen eye for design and a passion for building scalable, user-centric applications. With over 5 years of experience in web development, I specialize in React, TypeScript, and Node.js. I believe in writing clean, maintainable code and staying current with the latest industry trends and best practices.",
+  "contact": {
+    "email": "alex.johnson@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA"
+  },
+  "stats": [
+    {
+      "label": "Years of Experience",
+      "value": "5+"
+    },
+    {
+      "label": "Projects Completed",
+      "value": "50+"
+    },
+    {
+      "label": "Happy Clients",
+      "value": "30+"
+    },
+    {
+      "label": "Code Contributions",
+      "value": "10K+"
+    }
+  ]
+}

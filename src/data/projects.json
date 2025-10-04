@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "E-Commerce Platform",
+    "image": "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+    "techStack": ["React", "Node.js", "PostgreSQL", "Stripe"],
+    "tags": ["Full-Stack", "E-Commerce", "Payment Integration"],
+    "description": "A comprehensive e-commerce platform with real-time inventory management, secure payment processing, and admin dashboard. Features include product catalog, shopping cart, order tracking, and customer analytics.",
+    "contribution": 85,
+    "results": "Processed $500K+ in transactions, 5K+ active users, 99.9% uptime",
+    "links": [
+      { "type": "GitHub", "url": "https://github.com/example/ecommerce" },
+      { "type": "Live Demo", "url": "https://demo-ecommerce.com" }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Task Management App",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+    "techStack": ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+    "tags": ["SaaS", "Productivity", "Real-time"],
+    "description": "A collaborative task management application with real-time updates, team workspaces, and project tracking. Includes drag-and-drop kanban boards, time tracking, and integrations with popular tools.",
+    "contribution": 90,
+    "results": "3K+ daily active users, 95% user satisfaction, featured on Product Hunt",
+    "links": [
+      { "type": "GitHub", "url": "https://github.com/example/taskapp" },
+      { "type": "Live Demo", "url": "https://demo-taskapp.com" }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Social Media Dashboard",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    "techStack": ["Next.js", "GraphQL", "MongoDB", "Chart.js"],
+    "tags": ["Analytics", "Dashboard", "Social Media"],
+    "description": "Analytics dashboard for social media management with multi-platform integration. Provides insights on engagement, growth metrics, content performance, and automated reporting.",
+    "contribution": 80,
+    "results": "Used by 50+ brands, tracks 1M+ social posts monthly",
+    "links": [
+      { "type": "GitHub", "url": "https://github.com/example/dashboard" }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Learning Management System",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
+    "techStack": ["React", "Express", "PostgreSQL", "AWS S3"],
+    "tags": ["Education", "Video Streaming", "CMS"],
+    "description": "Online learning platform with video courses, quizzes, progress tracking, and certificates. Features include course creation tools, student management, and payment integration.",
+    "contribution": 75,
+    "results": "10K+ enrolled students, 200+ courses, 4.8/5 average rating",
+    "links": [
+      { "type": "Live Demo", "url": "https://demo-lms.com" }
+    ]
+  }
+]

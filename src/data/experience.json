@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "company": "TechCorp Solutions",
+    "position": "Senior Full-Stack Developer",
+    "period": "2022 - Present",
+    "responsibilities": [
+      "Lead development of enterprise SaaS platform serving 10K+ users",
+      "Architected microservices infrastructure using Node.js and Docker",
+      "Mentored team of 5 junior developers and conducted code reviews",
+      "Reduced application load time by 60% through optimization"
+    ]
+  },
+  {
+    "id": "2",
+    "company": "Digital Innovations Inc",
+    "position": "Full-Stack Developer",
+    "period": "2020 - 2022",
+    "responsibilities": [
+      "Developed responsive web applications using React and TypeScript",
+      "Integrated RESTful APIs and GraphQL endpoints",
+      "Implemented CI/CD pipelines with GitHub Actions",
+      "Collaborated with UX team to improve user engagement by 40%"
+    ]
+  },
+  {
+    "id": "3",
+    "company": "StartupHub",
+    "position": "Frontend Developer",
+    "period": "2019 - 2020",
+    "responsibilities": [
+      "Built interactive UI components with React and Redux",
+      "Maintained 95%+ code coverage through unit testing",
+      "Optimized bundle size reducing initial load by 45%",
+      "Worked in agile environment with 2-week sprints"
+    ]
+  }
+]
