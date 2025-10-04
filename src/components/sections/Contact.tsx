@@ -24,7 +24,7 @@ export function Contact() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const iconMap: Record<string, any> = {
+  const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
     Github,
     Linkedin,
     Globe,

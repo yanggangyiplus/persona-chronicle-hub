@@ -45,7 +45,7 @@ export function AdminProjects() {
     setProjects(projects.filter((p) => p.id !== id));
   };
 
-  const updateProject = (id: string, field: string, value: any) => {
+  const updateProject = (id: string, field: string, value: string | number) => {
     setProjects(projects.map((p) => (p.id === id ? { ...p, [field]: value } : p)));
   };
 

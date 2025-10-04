@@ -41,7 +41,7 @@ export function AdminExperience() {
     setExperiences(experiences.filter((exp) => exp.id !== id));
   };
 
-  const updateExperience = (id: string, field: string, value: any) => {
+  const updateExperience = (id: string, field: string, value: string | number) => {
     setExperiences(
       experiences.map((exp) => (exp.id === id ? { ...exp, [field]: value } : exp))
     );
@@ -52,11 +52,11 @@ export function AdminExperience() {
       experiences.map((exp) =>
         exp.id === expId
           ? {
-              ...exp,
-              responsibilities: exp.responsibilities.map((r, i) =>
-                i === index ? value : r
-              ),
-            }
+            ...exp,
+            responsibilities: exp.responsibilities.map((r, i) =>
+              i === index ? value : r
+            ),
+          }
           : exp
       )
     );

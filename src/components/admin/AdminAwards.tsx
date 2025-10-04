@@ -43,7 +43,7 @@ export function AdminAwards() {
     setAwards(awards.filter((a) => a.id !== id));
   };
 
-  const updateAward = (id: string, field: string, value: any) => {
+  const updateAward = (id: string, field: string, value: string | number) => {
     setAwards(awards.map((a) => (a.id === id ? { ...a, [field]: value } : a)));
   };
 

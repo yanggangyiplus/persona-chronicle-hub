@@ -57,17 +57,17 @@ export function AdminSkills() {
     catIndex: number,
     skillIndex: number,
     field: string,
-    value: any
+    value: string | number
   ) => {
     setSkillCategories(
       skillCategories.map((cat, i) =>
         i === catIndex
           ? {
-              ...cat,
-              skills: cat.skills.map((skill, si) =>
-                si === skillIndex ? { ...skill, [field]: value } : skill
-              ),
-            }
+            ...cat,
+            skills: cat.skills.map((skill, si) =>
+              si === skillIndex ? { ...skill, [field]: value } : skill
+            ),
+          }
           : cat
       )
     );
